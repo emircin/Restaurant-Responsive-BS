@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>OburDünya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/aGLqxsen_400x400.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <a href="" name="home"></a>
+    <main class="home-page">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand ms-4"> <img
+          src="./images/aGLqxsen_400x400.png"
+          alt=""
+          class="rounded-circle"
+          style="height: 50px"
+        /></a>
+          <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="myNavCollapse"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#tarihce"
+                  >HAKKIMIZDA
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#howit">PAKET SERVİS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-3" href="#menü">MENÜ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-3" href="#iletişim"
+                  >İLETİŞİM</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  class="btn btn-outline-success me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  type="button"
+                >
+                  Üye Ol
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </nav>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">KAYDOL</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail4"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label"
+                        >Şifre</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword4"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="ad" class="form-label">Ad</label>
+                      <input type="text" class="form-control" id="ad" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="soyad" class="form-label">Soyad</label>
+                      <input type="text" class="form-control" id="soyad" />
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Adres</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="Mahalle, Cadde"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label"
+                        >Adres-2</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress2"
+                        placeholder="Sokak, Bina-No, Kat"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">İlçe</label>
+                      <input type="text" class="form-control" id="inputCity" />
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputState" class="form-label">Şehir</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Seç..</option>
+                        <option>Bursa</option>
+                        <option>İstanbul</option>
+                        <option>Ankara</option>
+                        <option>İzmir</option>
+                        <option>Adana</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputZip" class="form-label">Posta No:</label>
+                      <input type="text" class="form-control" id="inputZip" />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gridCheck"
+                        />
+                        <label class="form-check-label" for="gridCheck">
+                          Şartları okudum ve kabul ediyorum.
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Üye Ol
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div
+        class="d-flex flex-column justify-content-center align-items-center hosgeldiniz"
+      >
+        <div>
+          <p class="text-success welcome">OBURDÜNYA</p>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-success my-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#uye-giris"
+          >
+            Üye Giriş
+          </button>
+        </div>
+
+        <div
+          class="modal fade"
+          id="uye-giris"
+          tabindex="-1"
+          aria-labelledby="uyegirisekrani"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-sm text-secondary">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="uyegirisekrani">Üyelik Girişi</h6>
+                <button
+                  type="button"
+                  class="btn-close btn-sm"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <label for="entry-email" class="col-sm-3 col-form-label-sm"
+                    >Email</label
+                  >
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="entry-email" />
+                  </div>
+                  <label for="entry-pass" class="col-sm-3 col-form-label-sm"
+                    >Şifre</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="entry-pass"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Giriş Yap</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#home">
+        <div class="position-fixed img-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="white"
+            class="bi bi-file-arrow-up"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5z"
+            />
+            <path
+              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+            />
+          </svg></div
+      ></a>
+    </main>
+    <a href="" name="tarihce" style="margin: 0; padding: 0"></a>
+    <main class="tarihce d-flex justify-content-evenly align-items-center">
+      <div class="d-flex justify-content-evenly align-items-center">
+        <img
+          src="./images/fruits-veg.jpg"
+          class="img-thumbnail"
+          alt="..."
+          width="300px"
+        />
+      </div>
+      <div>
+        <h1 class="h1 bg-white text-success mb-2 text-center">Hakkımızda</h1>
+        <p style="width: 300px" class="text-light about">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+          possimus nulla, magni placeat ut labore dolor architecto non quis
+          voluptates sapiente asperiores eligendi ipsam consectetur repellendus
+          veniam! Doloremque quisquam vero asperiores sequi impedit ipsum
+          maxime, praesentium harum culpa? Veniam possimus, alias molestiae
+          doloremque ipsum eveniet accusantium blanditiis in eius iusto natus
+          eaque fugit esse atque, iste laboriosam maxime. Quo repudiandae
+          assumenda unde, esse ipsam illo.
+        </p>
+      </div>
+    </main>
+    <a href="" name="howit"></a>
+    <main class="how-it text-center">
+      <a href="" name="howit"></a>
+      <h1 class="text-white">PAKET SERVİS</h1>
+      <div class="container h-50 text-center d-flex align-items-end">
+        <div class="row row-cols-3 text-white">
+          <div class="col">
+            <button type="button" class="btn btn-success rounded-circle">
+              1
+            </button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              deleniti.
+            </p>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-success rounded-circle">
+              2
+            </button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              deleniti.
+            </p>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-success rounded-circle">
+              3
+            </button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              deleniti.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="menu text-center">
+      <a href="" name="menü"></a>
+      <p class="h1 py-5 text-success">MENÜ</p>
+      <div class="container-fluid">
+        <div class="row ms-5">
+          <div class="col-sm-4 col-6 justify-content-center">
+            <div class="card w-75">
+              <img src="./images/desserts.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <h5 class="card-title text-success bg-white">
+                  TATLILAR
+                </h5>
+                <button type="button" class="btn btn-success btn-sm">
+                  Fiyat
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-6">
+            <div class="card w-75">
+              <img src="./images/salads.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <h5 class="card-title text-success bg-white">
+                  SALATALAR
+                </h5>
+                <button type="button" class="btn btn-success btn-sm">
+                  Fiyat
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-6 last-card">
+            <div class="card w-75">
+              <img src="./images/drinks.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <h5 class="card-title text-success bg-white">
+                  İÇECEKLER
+                </h5>
+                <button type="button" class="btn btn-success btn-sm">
+                  Fiyat
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="get-in-touch">
+      <a href="" name="iletişim"></a>
+      <div class="container">
+        <div class="py-5"><p class="h1 text-white">BİZE ULAŞIN</p></div>
+        <div class="row row-cols-6 text-white">
+          <div class="col-4 social">
+            <h1>Sosyal Medya</h1>
+            <a href="https://www.instagram.com/oburdunya/" target="_blank">
+              <p>
+                Facebook
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0dcaf0"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </p>
+            </a>
+            <a href="https://twitter.com/obur_dunya" target="_blank">
+              <p>
+                Twitter
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0dcaf0"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </p>
+            </a>
+            <a href="https://www.instagram.com/oburdunya/" target="_blank">
+              <p>
+                Instagram
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0dcaf0"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </p>
+            </a>
+          </div>
+          <div class="col-8">
+            <h1>Adreslerimiz</h1>
+            <h3 class="text-info">Londra UK</h3>
+            <p>Carlos Pl, London W1K 2AL, United Kingdom</p>
+            <h3 class="text-info">New York USA</h3>
+            <p>373 5th Ave, New York, NY 10016, United States</p>
+            <h3 class="text-info">Istanbul TR</h3>
+            <p>Harbiye, Bostan Sk. No:10/2, 34367 Şişli/İstanbul</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-white px-4">
+        © 2022 OBURDÜNYA. - Tüm hakları saklıdır.
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+*{
+    font-family: 'JetBrains Mono', monospace;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.home-page{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)), url(./images/home-pages.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.h1{
+    font-size: 2rem;
+}
+ul .nav-link{
+    margin-right: 1rem;
+}
+
+ul .nav-link:hover{
+    border-bottom: 2px solid green;
+}
+.tarihce{
+    background-color: #16703c;
+    height: 100vh;
+}
+.hosgeldiniz{
+    height: 60vh;
+    color:aliceblue;
+    font-size: 3rem;
+}
+.welcome{
+    transition-duration: 1s;
+}
+.welcome:hover{
+    font-size: 3.5rem;
+    transition-duration: 1s;
+}
+.about{
+    text-align: center;
+    margin-top: 2rem;
+}
+.how-it{
+    background-image: linear-gradient(rgba(8, 8, 8, 0.4), rgba(0, 0, 0, 0.4)), url(./images/delivery.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.how-it h1{
+    padding-top: 5rem;
+    font-size: 3rem;
+    display: inline-block;
+}
+.how-it h1:hover{
+    opacity: 0.5;
+}
+.how-it button{
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+.menu{
+    background-color: #86bd5f;
+    height: 130vh;
+}
+.menu .container{
+    margin-top: 1rem;
+}
+.menu .h1{
+    font-size: 3rem;
+}
+.menu .h1:hover{
+    opacity: 0.5;
+}
+.get-in-touch{
+    background-image: url(./images/meal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.get-in-touch .container{
+    height: 90vh;
+}
+.img-svg{
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.social p:hover{
+    cursor: pointer;
+    color:#0dcaf0
+}
+@media only screen and (max-width:980px){
+    .menu h5{
+        font-size: 10px !important;
+    }
+    .menu button{
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width:576px){
+
+    .menu .last-card{
+        margin: 1rem auto;
+    }
+}
