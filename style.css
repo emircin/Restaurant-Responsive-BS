@@ -98,10 +98,16 @@ ul .nav-link:hover{
     .menu button{
         font-size: 10px !important;
     }
+    .about{
+        font-size: 16px !important;
+    }
 }
-@media only screen and (max-width:576px){
+@media only screen and (max-width:763px){
 
     .menu .last-card{
         margin: 1rem auto;
+    }
+    .about{
+        font-size: 10px !important;
     }
 }
